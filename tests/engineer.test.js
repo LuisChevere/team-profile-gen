@@ -5,3 +5,10 @@ test('creates engineer object', () => {
 
     expect(engineer.github).toEqual(expect.any(String));
 })
+
+test('gets engineer github', () => {
+    const engineer = new Engineer('Luis', 34, 'hairchevere@gmail.com');
+
+    expect(engineer.getGithub().toEqual(expect.stringContainer(engineer.github.toString())));
+
+});
