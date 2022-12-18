@@ -6,6 +6,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const { type } = require('os');
 const { default: Choice } = require('inquirer/lib/objects/choice');
+const Employee = require('./lib/employees');
 const teamArray = [];
 
 const addManager = () => {
@@ -151,6 +152,33 @@ const addEmployee = () => {
                 }
             }
         },
-        
+        {
+            type: 'confirm',
+            name: 'confirmAddEmployee',
+            message: "Would you like to add another member?",
+            default: false
+        }
+
     ])
-}
+    .then(employeeData => {
+        let {name, id, email, role, github, confirmAddEmployee} = employeeData;
+        let employee;
+
+        if(role === "Engineer") {
+            employee - new Engineer (name, id, email, github);
+
+            console.log(employee);
+        } else if(role === "Intern") {
+            employee = new Intern (name, id, email, school);
+            console.log(employee);
+        }
+        teamArray.push(employee);
+
+        if (confirmAddEmployee) {
+            return addEmployee(teamArray);
+        } else {
+            return teamArray;
+        }
+    })
+};
+
