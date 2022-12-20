@@ -1,6 +1,6 @@
 <h1 class="center">Team Profile Generator</h1>
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)<br />
 
   ## Table of Contents
   - [Description](#description)
@@ -32,7 +32,7 @@
 
 
   ## Questions
-  Github:![Github](https://github.com/LuisChevere)<br />
+  Github:[Github](https://github.com/LuisChevere)<br />
   <br />
   Email with any questions: Hairchevere@gmail.com
-`
+
