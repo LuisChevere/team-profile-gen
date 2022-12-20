@@ -54,22 +54,21 @@ const addManager = () => {
         },
         {
             type: 'input',
-            name: 'OfficeNumber',
+            name: 'officeNumber',
             message: 'Please enter manager office number.',
             validate: nameInput => {
                 if (isNaN(nameInput)) {
-                    return true;
-                } else {
                     console.log (" Please enter office number.")
                     return false;
+                } else {
+                    return true;
                 }
             }
         }
     ])
     .then(managerInput => {
-        const {name, id,  email, officeNumber} = managerInput;
+        const {name, id, email, officeNumber} = managerInput;
         const manager = new Manager (name, id, email, officeNumber);
-
         teamArray.push(manager);
         console.log(manager);
     })
@@ -82,8 +81,8 @@ const addEmployee = () => {
         {
             type: 'list',
             name: 'role',
-            message: "Please choose employee's role.",
-            Choices: ['Engineer', 'Intern']
+            message: "Please choose your employee's role",
+            choices: ['Engineer', 'Intern']
         },
         {
             type: 'input',
@@ -161,15 +160,16 @@ const addEmployee = () => {
 
     ])
     .then(employeeData => {
-        let {name, id, email, role, github, confirmAddEmployee} = employeeData;
+        let {name, id, email, role, github, confirmAddEmployee, school} = employeeData;
         let employee;
 
         if(role === "Engineer") {
-            employee - new Engineer (name, id, email, github);
-
+            employee = new Engineer (name, id, email, github);
+            console.log('New engineer: ');
             console.log(employee);
         } else if(role === "Intern") {
             employee = new Intern (name, id, email, school);
+            console.log('New employee intern: ')
             console.log(employee);
         }
         teamArray.push(employee);
