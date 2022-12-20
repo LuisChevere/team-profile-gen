@@ -19,7 +19,7 @@
   ## Usage
   This application can be used to create an employee list.<br />
   Walk through video [Here](https://drive.google.com/file/d/1Ph08uufsLTaDoeO4R-2CtQcSqN2y9Oj5/view?usp=share_link)<br />
-  ![screenshot]()<br />
+  ![screenshot](https://github.com/LuisChevere/team-profile-gen/blob/main/src/images/Team%20List.png?raw=true)<br />
 
   ## Contributions
   If interested in contributing, please read Installation.<br />
