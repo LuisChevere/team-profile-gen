@@ -18,7 +18,7 @@
 
   ## Usage
   This application can be used to create an employee list.<br />
-  Walk through video [Here]()<br />
+  Walk through video [Here](https://drive.google.com/file/d/1Ph08uufsLTaDoeO4R-2CtQcSqN2y9Oj5/view?usp=share_link)<br />
   ![screenshot]()<br />
 
   ## Contributions
